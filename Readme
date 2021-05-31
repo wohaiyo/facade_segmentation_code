@@ -1,0 +1,26 @@
+# Facade segmentation
+Python3 code for facade segmentation on CMP dataset. This is a minimal code to implement Deeplabv3+.
+
+## Requirements
+
+To install tensorflow-gpu >= 1.5.0
+
+Python 3.6.2
+
+## Dataset and pretrained model
+
+Plesae download CMP dataset and unzip the data (`img` and `label`) into folder `data/cmp/train/` of this project.
+
+Link: https://pan.baidu.com/s/1gqqFiTT3w5Fl60XYdu04TQ code: vuhg
+
+Please download MIT imagenet pretrained [resnet50_v1_50.ckpt](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz) and put it into `data/pre_trained_model/` folder.
+
+## Training
+```
+python train.py
+```
+
+## Evaluation
+```
+python eval.py
+```
